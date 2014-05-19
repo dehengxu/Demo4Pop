@@ -1,0 +1,5 @@
+platform :ios, '6.0'
+pod 'pop'
+pod 'OCMock'
+pod 'JSONKit'
+xcodeproj 'Demo4Pop/Demo4Pop.xcodeproj'
