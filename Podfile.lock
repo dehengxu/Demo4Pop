@@ -1,15 +1,21 @@
 PODS:
   - JSONKit (1.5pre)
+  - MTLog (0.6.1)
+  - Objection (1.4)
   - OCMock (2.2.4)
   - pop (1.0.4)
 
 DEPENDENCIES:
   - JSONKit
+  - MTLog
+  - Objection
   - OCMock
   - pop
 
 SPEC CHECKSUMS:
   JSONKit: b1f52f3f522b8602307769511d4fb47c6f856159
+  MTLog: 7a8b3f4ab0fcc457428d85a66b731c6e2ef64bce
+  Objection: 73024a5572e6d14276289ed3761039476d746c39
   OCMock: 5008fae4b4789b8fc3e48cd7660f2eb5ef8ce89e
   pop: 63a4f5e8942077fed2efe195036ecc572c71c48c
 

@@ -8,14 +8,26 @@
 
 #import "AppDelegate.h"
 
+#import "Demo1Module.h"
+
+#import <DemoViewControllerProtocal.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    JSObjectionInjector *inj = [[JSObjectionInjector alloc] init];
+    inj = [inj withModuleCollection:@[[[Demo1Module alloc] init]]];
+    [JSObjection setDefaultInjector:inj];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = [[JSObjection defaultInjector] getObject:@protocol(DemoViewControllerProtocal)];
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

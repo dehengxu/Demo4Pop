@@ -12,3 +12,4 @@ end
 pod 'pop'
 pod 'JSONKit'
 pod 'Objection'
+pod 'MTLog'
